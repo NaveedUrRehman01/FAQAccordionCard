@@ -1,0 +1,139 @@
+:root {
+    /* COLOR PRIMARY */
+    /* Text */
+    --very-dark-desaturated-blue: hsl(238, 29%, 16%);
+    --soft-red: hsl(14, 88%, 65%);
+    /* Background gradient */
+    --soft-violet: hsl(273, 75%, 66%);
+    --soft-blue: hsl(240, 73%, 65%);
+    /* COLOR NEUTRAL */
+    /* Text */
+    --very-dark-grayish-blue: hsl(237, 12%, 33%);
+    --dark-grayish-blue: hsl(240, 6%, 50%);
+    /* Dividers */
+    --light-grayish-blue: hsl(240, 5%, 91%);
+    /* FONT */
+    --kumbh: 'Kumbh Sans', sans-serif;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(40deg, var(--soft-blue) 60%, var(--soft-violet) 60%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular',
+     'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.main{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    width: 70%;
+    height: 500px;
+    background-color: #eee;
+    border-radius: 25px;
+    margin-top: 5%;
+}
+.desktop{
+    position: relative;
+    left: -195px;
+}
+.img-2
+{
+  position: relative;
+  z-index: 1;
+}
+.img-1
+{
+  position:absolute;
+    top: 150px;
+    left: -15px;
+    z-index: 2;
+}
+
+.content{
+    width: 35%;
+}
+.accordion {
+    background-color: transparent;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  .accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    color: #777;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  hr{
+   border: 1px solid ghostwhite;
+  }
+  @media screen and (max-width:1024px) {
+   .main{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    margin-top: 9rem;
+    margin-bottom: 4rem;
+   }
+   .desktop{
+    position: relative;
+    left: 0%;
+    height: 150px;
+   
+   }
+   .img-1{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: -40px;
+    left: -10px;
+   }
+   .img-2{
+    width: 250px;
+    height: 250px;
+    position: relative;
+    top: -142px;
+   }
+
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.content{
+    width: 90%;
+    
+}
+  }
